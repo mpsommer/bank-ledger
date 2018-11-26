@@ -1,0 +1,4 @@
+configparser==3.5.0
+futures==3.2.0
+pymemcache==1.4.4
+redis==2.10.6
