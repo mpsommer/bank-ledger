@@ -73,7 +73,10 @@ class store(object):
 		is_active = False
 		account_key = PREFIX['account'] + username
 		session_key = PREFIX['session'] + username
-		remaining_time = time.time() - float(rs.get(session_key))
+		value = rs.get(session_key)
+		if value is None:
+			value = 0
+		remaining_time = time.time() - float(value)
 		if rs.exists(account_key) and remaining_time < self.session_length:
 			is_active = True
 		return is_active
