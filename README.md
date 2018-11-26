@@ -4,8 +4,8 @@ This application allows a user to signup for an account, login to a session depo
 
 #### NOTE:
 * The username is used as the account identifier and therefore is passed along with all commands.
-* Multiple commands can be passed, but multiple commands of the same type are not supported (e.g. ```run.py -d foo 2 -d foo 2``` will not work).
-* Transaction history keeps track of only the 100 most recent transactions and only dposit and withdraw are considered transactions.
+* Multiple commands can be passed, but multiple commands of the same type are not supported (e.g. ```run.py -d foo 2 -d foo 3``` will not work).
+* Transaction history keeps track of only the 100 most recent transactions and only deposit and withdraw are considered transactions.
 
 
 # Requirements/Installation
