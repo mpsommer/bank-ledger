@@ -4,11 +4,6 @@ from bank import bank
 from const import HELP, USER
 bank = bank()
 
-"""
-Change password.
-Make tests better, test store directly.
-User logger instead of print.
-"""
 def get_args():
 	parser = argparse.ArgumentParser(
 		description='Ledger program',
