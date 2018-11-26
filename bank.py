@@ -23,7 +23,7 @@ class bank(object):
 			store.create_account(username, password)
 			store.update_session_time(username)
 			key = PREFIX['balance'] + username
-			rs.set(key, 0)
+			rs.set(key, store.dollars_to_cents('0'))
 			return True
 
 	def login(self, username, password):

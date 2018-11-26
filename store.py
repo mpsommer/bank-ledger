@@ -166,7 +166,7 @@ class store(object):
 		Convert a string representation of dollars and cents to int.
 		e.g. 3.14 -> 314
 		"""
-		return int(float(value)* 100)
+		return int(round(float(value)*100))
 	
 	def cents_to_dollars(self, value):
 		"""
